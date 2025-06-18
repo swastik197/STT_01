@@ -3,7 +3,7 @@ import whisper
 import tempfile
 
 app = Flask(__name__)
-model = whisper.load_model("base")  # Use "tiny" if performance is slow
+model = whisper.load_model("tiny")  # Use "tiny" if performance is slow
 
 @app.route('/transcribe', methods=['POST'])
 def transcribe_audio():
